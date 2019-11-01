@@ -10,7 +10,9 @@ Corrimos varios modelos (SVDs para extraer “temas” transversales y Tsne para
 La información para el análisis se encuentra en un archivo **data.zip** para    
 usar hay que descomprimirlo con unzip.    
     
- sudo apt install unzip unzip data.zip   
+	 > sudo apt install unzip
+	 > unzip data.zip   
+ 
 ## Ambiente    
  - Python 3.6.8    
 - Pandas    
