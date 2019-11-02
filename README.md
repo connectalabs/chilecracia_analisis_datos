@@ -22,6 +22,8 @@ usar hay que descomprimirlo con unzip.
 
 ## Descubrimientos
  
+### Limpieda de datos y deteccion de interacciones anomalas 
+ 
  - **Votaciones excesivas por session uuid:** Hay sesiones que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.  
    
 ![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/uuid_repeticion.png)  
