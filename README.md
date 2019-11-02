@@ -24,10 +24,16 @@ usar hay que descomprimirlo con unzip.
  
 ### Limpieda de datos y deteccion de interacciones anomalas 
  
- - **Votaciones excesivas por session uuid:** Hay sesiones que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.  
+#### Votaciones excesivas por session uuid:
+
+** Se detectaron sesiones (UUIDs) que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.  
    
 ![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/uuid_repeticion.png)  
   
+#### Votaciones excesivas entre par Nueva Constitucion / Sueldo Minimo:
+
+
+
 - La opción **Nueva Constitución** tiene una frecuencia de aparición mayor al resto, aproximadamente un 80% superior al resto de preguntas que están en las 40.000 apariciones, lo que altera la representatividad de la muestra, considerando que hay sesiones que han generado situaciones cuestionables.  
   
 ![img02](http://lab.connectalabs.ai/chilecracia_analisis/img/opcion_a.png)
