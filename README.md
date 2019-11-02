@@ -38,5 +38,5 @@ usar hay que descomprimirlo con unzip.
 
 #### Participantes con una sola votacion (solo entre el par Nueva Constitución para Chile / Aumentar el Sueldo Minimo)
 
-
+** Mediante un analisis de clustering (DBSCAN) y reduccion de dimensionalidad (TSNE) se encontraron 4889 cuentas anomalas con una sola votacion (nuevamente entre la propuesta de Nueva Constutucion versus Sueldo Minimo). De éstas, 3040 apoyaron la nueva constitucion por sobre el sueldo minimo y 1849 apoyaron lo contrario. Generando un sesgo de 1191 votos a favor de la nueva constitucion
   
