@@ -34,7 +34,7 @@ usar hay que descomprimirlo con unzip.
 
 ** Se detectó un numero anómalo de pares de votacion entre la propuesta numero 23 (Nueva Constitución para Chile) y la propuesta numero 87 (Aumentar el Sueldo Minimo), llegando a un total de 34.933 apariciones lo cual es mas de 30 veces el promedio de todos los otros pares (900 veces aproximadamente).
 
-![img02](http://lab.connectalabs.ai/chilecracia_analisis/img/Screen Shot 2019-11-02 at 15.36.15.png)  
+![img02](http://lab.connectalabs.ai/chilecracia_analisis/img/heatmap_frequencia_pares.png)  
 
 #### Participantes con una sola votacion (solo entre el par Nueva Constitución para Chile / Aumentar el Sueldo Minimo)
 
