@@ -21,6 +21,15 @@ usar hay que descomprimirlo con unzip.
 - sklearn (KMeans, DBSCAN, TSNE)    
 
 ## Descubrimientos
+
+### Resumen
+
+En primer lugar se ve un numero relevante de anomalias las cuales estan generando un sesgo en el analisis. Estas anomalias, una vez ajustadas, muestran que éstas generan un sesgo hacia propuestas mas en el espectro "politico" (en particular en pos de una nueva constitucion) por sobre medidas de orden mas pragmatico/economico.
+
+El modelo de reduccion de dimensionalidad muestra ejes que agrupan las grandes tematicas bajo discusion, estableciendo en su primera componente un set prioritario en linea con mejora del estado de bienestar, redistribucion del ingreso y penalizacion de delitos politico/economicos. Los otros componentes apuntan a temas mas detallados, los cuales se muestran balanceados entre los diferentes votantes.
+
+Estas herramientas son de utilidad para consolidar el numero de medidas y, en base a los patrones de votacion, extraer las tematicas que se agrupan segun el tipo de participante.
+
  
 ### Limpieza de datos y deteccion de interacciones anomalas 
  
@@ -47,7 +56,6 @@ Tras realizar acciones correctivas para mitigar los efectos de calidad de datos 
 Una forma de entender estos "temas" es que cada uno representa un votante tipo, el cual tiene preferencia de algunas propuestas sobre otras. Cada votante es una combinacion de estos "tipos de votante", el cual queda determinado por los pesos de cada participante a cada tema.
 
 ### Tema 1
-
 El primer tema o tipo de votante se podria resumir como todos los elementos de prioridad "transversal" vs aquellos de relevancia "secundaria" o impopular. (ojo que en este caso el algoritmo los definio de manera inversa, la mayoria de los participantes poseen un valor negativo en esta dimension, lo que significa apoyo de las medidas con pesos negativos)
 
 Se ve que la mayoria apoya medidas en linea con aumento al estado de bienestar (pensiones, salud), mejorar la redistribucion del ingreso (impuestos progresivos), penalizacion de delitos politico/economicos.
@@ -56,6 +64,48 @@ Por el contrario, dentro de las medidas "secundarias" se ven temas relativos a o
 
 IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS, LA RELEVANCIA DE LA NUEVA CONSTITUCION SALE DE LAS TOP 10, MIENTRAS QUE EL AUMENTO DEL SUELDO MINIMO SIGUE SIENDO DE ALTA RELEVANCIA (TOP 2)
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1.png)  
+
+### Tema 2
+El segundo tema o tipo de votante puede resumirse como aquel preferiere medidas "pragmaticas" sobre medidas "politicas".
+
+En el extremo "politico" se ven temas consituyentes (nueva constitucion, asamblea constituyente, plebiscitos), oposicion a la situacion militar/policial (retiro de FFAA, investigacion DDHH, fin toque de queda) y causas historico/culturales (pueblos originarios, nacionalizaciones)
+
+En el extremo "pragmatico" se ve fuerte el sueldo minimo, seguridad, transporte, salud y educacion
+
+La distribucion muestra un sesgo "pragmatico" versus "politico"
+
+IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS SE VE UN CAMBIO EN EL SESGO DESDE LO "POLITICO" A LO "PRAGMATICO". EVIDENCIANDO EL SESGO DE LOS VOTOS ANOMALOS
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_2.png)  
+
+### Tema 3
+El tercer tema o tipo de votante puede resumirse como aquel que promueve medidas sobre "juventud, educacion y bienestar" versus "reduccion y control de la clase piolitica"
+
+El eje de "Juventud, educacion, y bienestar" se ven temas de apoyo a menores (sala cuna, sename, jovenes de alto riesgo), fortalecimiento a la educacion y las ciencias, ademas de mejoras al estados de bienestar (fondo comun municipal, pensiones, espacios publicos, etc).
+
+El eje de reduccion de la clase politica se enfoca en limitar las capacidades y privilegios de ésta.
+
+La distribucion entre participantes se puede ver bastante balanceada, con un pequeño sesgo a valorar elementos de "juventud, educacion y bienestar" por sobre la "reduccion y control de la clase politica"
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_3.png)  
+
+### Tema 4
+El cuarto eje o tipo de votante contrapesa medidas del tipo "subsidios y aportes economicos" versus "penalizacion de abusos"
+
+El eje de "subsidios y aportes economicos" toma temas como subsudios a servicios basicos, condonacion del CAE, mejora de pensiones y otros con el mismo foco econonico.
+
+El eje de "penalizacion de abusos" muestra elementos relativos a carcel efectiva por delitos politico/economicos, reforma al sistema de notarios, ademas de elementos de ecologia y ciencia.
+
+La distribucion es bastante balanceada, con un pequeño sesgo al la "penalizacion de abusos".
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_4.png)  
+
+### Tema 5
+El cuarto eje o tipo de votante contrapesa medidas del tipo "ecologia y estatizacion de recursos naturales" versus "integracion social"
+
+El eje de "ecologia" muestra iniciativas relativas a glaciares, huella de carbono y la nacionalizacion de recursos naturales como el litio y el agua.
+
+En el eje de "integracion social" relacionados a la integracion de viviendas sociales en el barrio alto y en edificios particulares, fondo comun municipal, ademas de elementos contra las la gestion politica actual (cambio de gabinete, fin al toque de queda).
+
+No se ve un sesgo claro en la distribucion
+
 
 
 
