@@ -63,7 +63,10 @@ Se ve que la mayoria apoya medidas en linea con aumento al estado de bienestar (
 Por el contrario, dentro de las medidas "secundarias" se ven temas relativos a ordenamiento territorial, redes sociales, marihuana, periodo presindencial.
 
 IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS, LA RELEVANCIA DE LA NUEVA CONSTITUCION SALE DE LAS TOP 10, MIENTRAS QUE EL AUMENTO DEL SUELDO MINIMO SIGUE SIENDO DE ALTA RELEVANCIA (TOP 2)
+VALORES CON AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1.png)  
+VALORES SIN AJUSTE
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1_sin_ajuste.png)  
 
 ### Tema 2
 El segundo tema o tipo de votante puede resumirse como aquel preferiere medidas "pragmaticas" sobre medidas "politicas".
@@ -75,7 +78,11 @@ En el extremo "pragmatico" se ve fuerte el sueldo minimo, seguridad, transporte,
 La distribucion muestra un sesgo "pragmatico" versus "politico"
 
 IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS SE VE UN CAMBIO EN EL SESGO DESDE LO "POLITICO" A LO "PRAGMATICO". EVIDENCIANDO EL SESGO DE LOS VOTOS ANOMALOS
+
+VALORES CON AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_2.png)  
+VALORES SIN AJUSTE
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_2_sin_ajuste.png)  
 
 ### Tema 3
 El tercer tema o tipo de votante puede resumirse como aquel que promueve medidas sobre "juventud, educacion y bienestar" versus "reduccion y control de la clase piolitica"
@@ -85,7 +92,10 @@ El eje de "Juventud, educacion, y bienestar" se ven temas de apoyo a menores (sa
 El eje de reduccion de la clase politica se enfoca en limitar las capacidades y privilegios de ésta.
 
 La distribucion entre participantes se puede ver bastante balanceada, con un pequeño sesgo a valorar elementos de "juventud, educacion y bienestar" por sobre la "reduccion y control de la clase politica"
+VALORES CON AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_3.png)  
+VALORES SIN AJUSTE
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_3_sin_ajuste.png)  
 
 ### Tema 4
 El cuarto eje o tipo de votante contrapesa medidas del tipo "subsidios y aportes economicos" versus "penalizacion de abusos"
@@ -95,6 +105,7 @@ El eje de "subsidios y aportes economicos" toma temas como subsudios a servicios
 El eje de "penalizacion de abusos" muestra elementos relativos a carcel efectiva por delitos politico/economicos, reforma al sistema de notarios, ademas de elementos de ecologia y ciencia.
 
 La distribucion es bastante balanceada, con un pequeño sesgo al la "penalizacion de abusos".
+VALORES CON AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_4.png)  
 
 ### Tema 5
@@ -105,7 +116,8 @@ El eje de "ecologia" muestra iniciativas relativas a glaciares, huella de carbon
 En el eje de "integracion social" relacionados a la integracion de viviendas sociales en el barrio alto y en edificios particulares, fondo comun municipal, ademas de elementos contra las la gestion politica actual (cambio de gabinete, fin al toque de queda).
 
 No se ve un sesgo claro en la distribucion
-
+VALORES CON AJUSTE
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_5.png)  
 
 
 
