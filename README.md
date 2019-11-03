@@ -24,6 +24,9 @@ La información para el análisis se encuentra en un archivo **data.zip** para u
 
 - [Analisis Chilecracia](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/Analisis_Chilecracia.ipynb): Notebook con el análisis sobre la base completa de Chilecracia.
 - [Analisis Chilecracia sin anomalos](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/Analisis_Chilecracia_sin_anomalos.ipynb): Notebook con el análisis sobre Chilecracia, en el cual eliminamos los datos anómalos.
+- [data_option.html](http://lab.connectalabs.ai/chilecracia_analisis/data_option_profile.html): Exploratory data analysis de la tabla ids de Chilecracia
+- [data_people.html](http://lab.connectalabs.ai/chilecracia_analisis/data_people_profile.html): Exploratory data analysis de la tabla people de Chilecracia
+- [data_survey_eda_profile.html](http://lab.connectalabs.ai/chilecracia_analisis/data_survey_eda_profile.html): Exploratory data analysis de la tabla surveys de Chilecracia.
 
 ## Descubrimientos  
   
@@ -40,7 +43,7 @@ Estas herramientas son de utilidad para consolidar el número de medidas y, en b
  #### Votaciones excesivas por session uuid:  
   
 ** Se detectaron sesiones (UUIDs) que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.    
-![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/uuid_repeticion.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/uuid_repeticion.png)    
     
     
 #### Votaciones excesivas entre par Nueva Constitución para Chile / Aumentar el Sueldo Mínimo:  
@@ -74,7 +77,7 @@ VALORES SIN AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1_sin_ajuste.png)    
   
 ### Tema 2  
-El segundo tema o tipo de votante puede resumirse como aquel prefiere medidas "pragmáticas" sobre medidas "politicas".  
+El segundo tema o tipo de votante puede resumirse como aquel prefiere medidas "pragmáticas" sobre medidas "políticas".  
   
 En el extremo "político" se ven temas constituyentes (nueva constitución, asamblea constituyente, plebiscitos), oposicion a la situacion militar/policial (retiro de FFAA, investigación DDHH, fin toque de queda) y causas histórico/culturales (pueblos originarios, nacionalizaciones)  
   
@@ -116,7 +119,7 @@ VALORES CON AJUSTE
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_4.png)    
   
 ### Tema 5  
-El cuarto eje o tipo de votante contrapesa medidas del tipo "ecologia y estatización de recursos naturales" versus "integracion social"  
+El cuarto eje o tipo de votante contrapesa medidas del tipo "ecología y estatización de recursos naturales" versus "integracion social"  
   
 El eje de "ecología" muestra iniciativas relativas a glaciares, huella de carbono y la nacionalización de recursos naturales como el litio y el agua.  
   
