@@ -29,6 +29,7 @@ usar hay que descomprimirlo con unzip.
 ** Se detectaron sesiones (UUIDs) que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.  
 ![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/uuid_repeticion.png)  
   
+  
 #### Votaciones excesivas entre par Nueva Constitución para Chile / Aumentar el Sueldo Minimo:
 
 ** Se detectó un numero anómalo de pares de votacion entre la propuesta numero 23 (Nueva Constitución para Chile) y la propuesta numero 87 (Aumentar el Sueldo Minimo), llegando a un total de 34.933 apariciones lo cual es mas de 30 veces el promedio de todos los otros pares (900 veces aproximadamente).
