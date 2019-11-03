@@ -33,9 +33,9 @@ usar hay que descomprimirlo con unzip.
 #### Votaciones excesivas entre par Nueva Constitución para Chile / Aumentar el Sueldo Minimo:
 
 ** Se detectó un numero anómalo de pares de votacion entre la propuesta numero 23 (Nueva Constitución para Chile) y la propuesta numero 87 (Aumentar el Sueldo Minimo), llegando a un total de 34.933 apariciones lo cual es mas de 30 veces el promedio de todos los otros pares (900 veces aproximadamente).
-![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/heatmap_frequencia_pares.png)  
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/heatmap_frequencia_pares.png)  
 
 #### Participantes con una sola votacion (solo entre el par Nueva Constitución para Chile / Aumentar el Sueldo Minimo)
 
 ** Mediante un analisis de clustering (DBSCAN) y reduccion de dimensionalidad (TSNE) se encontraron 4889 cuentas anomalas con una sola votacion (nuevamente entre la propuesta de Nueva Constutucion versus Sueldo Minimo). De éstas, 3040 apoyaron la nueva constitucion por sobre el sueldo minimo y 1849 apoyaron lo contrario. Generando un sesgo de 1191 votos a favor de la nueva constitucion
-![img01](http://lab.connectalabs.ai/chilecracia_analisis/img/cluster_tsne.png)  
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/cluster_tsne.png)  
