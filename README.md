@@ -22,7 +22,7 @@ usar hay que descomprimirlo con unzip.
 
 ## Descubrimientos
  
-### Limpieda de datos y deteccion de interacciones anomalas 
+### Limpieza de datos y deteccion de interacciones anomalas 
  
 #### Votaciones excesivas por session uuid:
 
@@ -39,3 +39,17 @@ usar hay que descomprimirlo con unzip.
 
 ** Mediante un analisis de clustering (DBSCAN) y reduccion de dimensionalidad (TSNE) se encontraron 4889 cuentas anomalas con una sola votacion (nuevamente entre la propuesta de Nueva Constutucion versus Sueldo Minimo). De éstas, 3040 apoyaron la nueva constitucion por sobre el sueldo minimo y 1849 apoyaron lo contrario. Generando un sesgo de 1191 votos a favor de la nueva constitucion
 ![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/cluster_tsne.png)  
+
+## Modelos y resultados
+
+Tras realizar acciones correctivas para mitigar los efectos de calidad de datos encontrados (limitar a participantes con menos de 500 votos, descartar las 4889 cuentas anomalas de 1 voto, y realizar downsampling aleatorio de las votaciones entre la medida 23 y 87). Se realizo un modelo de reduccion de dimensionalidad via SVD (Singular Value Decomposition https://en.wikipedia.org/wiki/Singular_value_decomposition). Donde la matriz de n participes y m propuestas se descompone en una de nxk y otra de kxm, sinendo k el numero de "temas" subyacentes que resumen la totalidad de propuestas.
+
+Una forma de entender estos "temas" es que cada uno representa un votante tipo, el cual tiene preferencia de algunas propuestas sobre otras. Cada votante es una combinacion de estos "tipos de votante", el cual queda determinado por los pesos de cada participante a cada tema.
+
+### Tema 1
+
+
+
+
+
+
