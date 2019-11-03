@@ -48,6 +48,14 @@ Una forma de entender estos "temas" es que cada uno representa un votante tipo, 
 
 ### Tema 1
 
+El primer tema o tipo de votante se podria resumir como todos los elementos de prioridad "transversal" vs aquellos de relevancia "secundaria" o impopular. (ojo que en este caso el algoritmo los definio de manera inversa, la mayoria de los participantes poseen un valor negativo en esta dimension, lo que significa apoyo de las medidas con pesos negativos)
+
+Se ve que la mayoria apoya medidas en linea con aumento al estado de bienestar (pensiones, salud), mejorar la redistribucion del ingreso (impuestos progresivos), penalizacion de delitos politico/economicos.
+
+Por el contrario, dentro de las medidas "secundarias" se ven temas relativos a ordenamiento territorial, redes sociales, marihuana, periodo presindencial.
+
+IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS, LA RELEVANCIA DE LA NUEVA CONSTITUCION SALE DE LAS TOP 10, MIENTRAS QUE EL AUMENTO DEL SUELDO MINIMO SIGUE SIENDO DE ALTA RELEVANCIA (TOP 2)
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1.png)  
 
 
 
