@@ -8,7 +8,8 @@ Corrimos varios modelos (SVDs para extraer “temas” transversales y Tsne para
 ## Datos Chile        
  Los datos se descargaron desde la web de chilecracia https://chilecracia.org/datos.        
         
-La información para el análisis se encuentra en un archivo **data.zip** para usar hay que descomprimirlo con unzip.        
+La información para el análisis se encuentra en un archivo **data.zip** para usar hay que descomprimirlo con unzip.
+(deben quedar guardados en el folder data/
         
 	 > sudo apt install unzip
 	 > unzip data.zip  
