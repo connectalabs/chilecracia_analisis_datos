@@ -8,8 +8,7 @@ Corrimos varios modelos (SVDs para extraer “temas” transversales y Tsne para
 ## Datos Chile        
  Los datos se descargaron desde la web de chilecracia https://chilecracia.org/datos.        
         
-La información para el análisis se encuentra en un archivo **data.zip** para usar hay que descomprimirlo con unzip.
-(deben quedar guardados en el folder data/)
+La información para el análisis se encuentra en un archivo **data.zip** para usar hay que descomprimirlo con unzip.        
         
 	 > sudo apt install unzip
 	 > unzip data.zip  
@@ -44,18 +43,18 @@ Estas herramientas son de utilidad para consolidar el número de medidas y, en b
  #### Votaciones excesivas por session uuid:  
   
 ** Se detectaron sesiones (UUIDs) que han generado sobre 3.000 votaciones, en un caso 16.959, para que un "humano" genere este número de votaciones, si cada una la hace cada 5 segundos, se demoraría 1413 minutos o 58 horas sin parar o alterar su rendimiento.    
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/uuid_repeticion.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/uuid_repeticion.png)    
     
     
 #### Votaciones excesivas entre par Nueva Constitución para Chile / Aumentar el Sueldo Mínimo:  
   
 ** Se detectó un número anómalo de pares de votación entre la propuesta número 23 (Nueva Constitución para Chile) y la propuesta número 87 (Aumentar el Sueldo Mínimo), llegando a un total de 34.933 apariciones lo cual es mas de 30 veces el promedio de todos los otros pares (900 veces aproximadamente).  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/heatmap_frequencia_pares.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/heatmap_frequencia_pares.png)    
   
 #### Participantes con una sola votación (solo entre el par Nueva Constitución para Chile / Aumentar el Sueldo Mínimo)  
   
 ** Mediante un analisis de clustering (DBSCAN) y reducción de dimensionalidad (TSNE) se encontraron 4889 cuentas anómalas con una sola votación (nuevamente entre la propuesta de Nueva Constitución versus Sueldo Mínimo). De éstas, 3040 apoyaron la nueva constitución por sobre el sueldo mínimo y 1849 apoyaron lo contrario. Generando un sesgo de 1191 votos a favor de la nueva constitución  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/cluster_tsne.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/cluster_tsne.png)    
   
 ## Modelos y resultados  
   
@@ -73,9 +72,9 @@ Por el contrario, dentro de las medidas "secundarias" se ven temas relativos a o
 IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANOMALOS, LA RELEVANCIA DE LA NUEVA CONSTITUCIÓN SALE DE LAS TOP 10, MIENTRAS QUE EL AUMENTO DEL SUELDO MÍNIMO SIGUE SIENDO DE ALTA RELEVANCIA (TOP 2)  
   
 VALORES CON AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_1.png)    
 VALORES SIN AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_1_sin_ajuste.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_1_sin_ajuste.png)    
   
 ### Tema 2  
 El segundo tema o tipo de votante puede resumirse como aquel prefiere medidas "pragmáticas" sobre medidas "políticas".  
@@ -89,9 +88,9 @@ La distribución muestra un sesgo "pragmático" versus "político"
 IMPORTANTE: AL COMPARAR ESTOS RESULTADOS CON LOS DEL MODELO SIN AJUSTAR POR ELEMENTOS ANÓMALOS SE VE UN CAMBIO EN EL SESGO DESDE LO "POLÍTICO" A LO "PRAGMÁTICO". EVIDENCIANDO EL SESGO DE LOS VOTOS ANÓMALOS  
   
 VALORES CON AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_2.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_2.png)    
 VALORES SIN AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_2_sin_ajuste.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_2_sin_ajuste.png)    
   
 ### Tema 3  
 El tercer tema o tipo de votante puede resumirse como aquel que promueve medidas sobre "juventud, educación y bienestar" versus "reducción y control de la clase política"  
@@ -103,9 +102,9 @@ El eje de reducción de la clase política se enfoca en limitar las capacidades 
 La distribución entre participantes se puede ver bastante balanceada, con un pequeño sesgo a valorar elementos de "juventud, educación y bienestar" por sobre la "reducción y control de la clase política"  
   
 VALORES CON AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_3.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_3.png)    
 VALORES SIN AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_3_sin_ajuste.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_3_sin_ajuste.png)    
   
 ### Tema 4  
 El cuarto eje o tipo de votante contrapesa medidas del tipo "subsidios y aportes económicos" versus "penalización de abusos"  
@@ -117,10 +116,10 @@ El eje de "penalización de abusos" muestra elementos relativos a cárcel efecti
 La distribución es bastante balanceada, con un pequeño sesgo al la "penalización de abusos".  
   
 VALORES CON AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_4.png)    
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_4.png)    
   
 ### Tema 5  
-El cuarto eje o tipo de votante contrapesa medidas del tipo "ecología y estatización de recursos naturales" versus "integracion social"  
+El cuarto eje o tipo de votante contrapesa medidas del tipo "ecología y estatización de recursos naturales" versus "integración social"  
   
 El eje de "ecología" muestra iniciativas relativas a glaciares, huella de carbono y la nacionalización de recursos naturales como el litio y el agua.  
   
@@ -129,4 +128,13 @@ En el eje de "integración social" relacionados a la integración de viviendas s
 No se ve un sesgo claro en la distribución  
   
 VALORES CON AJUSTE  
-![img01](https://github.com/connectalabs/chilecracia_analisis_datos/blob/master/img/tema_5.png)
+![img01](https://github.com/connectalabs/chilecracia_analisis_datos/raw/master/img/tema_5.png)
+
+# ConnectaLabs AI
+
+ConnectaLabs AI es una empresa especialista en el desarrollo de soluciones de inteligencia artificial para la comprensión del cliente. Si quieres saber más de nosotros y nuestros servicios puedes contactarnos en nuestras RRSS.
+
+ - Email: [ai@connectalabs.ai](mailto:ai@connectalabs.ai?subject=Riots-Chile)
+ - Web: [https://www.connectalabs.ai](https://www.connectalabs.ai)
+ - Linkedin: [https://www.linkedin.com/company/connecta-labs-ai](https://www.linkedin.com/company/connecta-labs-ai)
+ - Medium: [https://medium.com/connecta-ai](https://medium.com/connecta-ai)
